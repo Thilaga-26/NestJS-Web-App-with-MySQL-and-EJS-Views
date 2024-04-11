@@ -31,34 +31,96 @@ A comprehensive NestJS application for managing student records, providing CRUD 
 ## Installation
 
 ```bash
-$ npm install
-```
+For NestJS Installation and creating a new project in NestJS:
+$ npm i -g @nestjs/cli
+$ nest new project-name
 
-## Running the app
+For Configuration:
+$ npm i --save @nestjs/config
+
+For Database TypeORM Installation:
+$ npm install --save @nestjs/typeorm typeorm mysql2
+
+For EJS Views Engine:
+$ npm install ejs @nestjs/platform-express
+```
+## Configuration and TypeORM Setup
+
+In this NestJS application, we use environment variables for configuration and TypeORM for database management.
+
+# Configuration
+
+We utilize the `@nestjs/config` module to manage environment variables. These variables are stored in a `.env` file located in the root directory of the project. 
+You need to define the following variables:
+
+- `DB_HOST`: Hostname of the MySQL database.
+- `DB_PORT`: Port number of the MySQL database.
+- `DB_USERNAME`: Username for connecting to the MySQL database.
+- `DB_PASSWORD`: Password for connecting to the MySQL database.
+- `DB_DATABASE`: Name of the MySQL database.
+
+Ensure you set up these variables appropriately before running the application.
+
+# TypeORM Setup
+
+TypeORM is configured to connect to a MySQL database. The configuration is specified in the `src/app.module.ts` file.
+
+## Creating a New Module in NestJS
+
+NestJS follows a modular architecture, allowing developers to organize their code into cohesive modules. 
+
+Follow these steps to create a new module in your NestJS application:
+
+# Step 1: Generate Module
+
+Use the Nest CLI to generate a new module. Replace `module-name` with the name of your module:
 
 ```bash
-# development
-$ npm run start
+nest generate module module-name
 
+# Step 2: Generate Controller
+
+```bash
+nest generate controller module-name
+
+# Step 3: Generate Service
+
+```bash
+nest generate service module-name
+
+## Creating Entity Files and Views in NestJS
+
+In a NestJS application, entity files represent the data model used to interact with the database.
+Views, on the other hand, represent the UI templates rendered by the application.
+
+Follow these steps to create entity files and views:
+
+# Step 1: Create Entity File
+
+Create a new TypeScript file for your entity. For example, `student.entity.ts` within the `entities` directory.
+For example : ( Directory : (src/entities/student.entity.ts) )
+
+# Step 2: Create View Files
+
+Create a directory to store your views. For example, views within the module directory.
+For example : ( Directory : (src/students/views/homepage.ejs) ) 
+
+## Accessing Your NestJS Application Locally (For Running the app)
+
+To access your NestJS application running locally on your machine, follow these steps:
+
+1. Make sure your NestJS application is running. If not, start the application by running:
+
+```bash
 # watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
+2.Once the application is running, open your web browser.
 
-## Test
+Navigate to the following URL:
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
+http://localhost:3000/module-name
+( For Example : http://localhost:3000/students )
 
 ## Support
 
