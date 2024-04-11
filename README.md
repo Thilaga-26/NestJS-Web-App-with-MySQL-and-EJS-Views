@@ -24,7 +24,9 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+# NestJS Student Management System
+
+A comprehensive NestJS application for managing student records, providing CRUD operations for students, and rendering views using EJS templating engine.
 
 ## Installation
 
