@@ -28,7 +28,7 @@
 
 A comprehensive NestJS application for managing student records, providing CRUD operations for students, and rendering views using EJS templating engine.
 
-## Cloning the Repository
+# Cloning the Repository
 
 You can clone this repository to your local machine using the following command:
 
