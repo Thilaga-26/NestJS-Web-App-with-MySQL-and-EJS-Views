@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Teacher</title>
+</head>
+<body>
+  <h1 style="color:red">Add Teacher</h1>
+  <table>
+    <tbody>
+      <form method="POST" action="/teachers">
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+          <td><label for="dept">Department:</label></td>
+          <td><input type="text" id="dept" name="dept" required></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td>
+            <select id="gender" name="gender" required>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><input type="text" id="address" name="address" required></td>
+        </tr>
+        <tr>
+          <td><label for="contactNo">Contact Number:</label></td>
+          <td><input type="text" id="contactNo" name="contactNo" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button style="background-color:peachpuff;" type="submit">Add Teacher</button></td>
+        </tr>
+      </form>
+    </tbody>
+  </table>
+  <h3><p><b><a style="color:green"  href="/teachers">Back to teacher-homepage</a></b></p></h3>
+</body>
+</html>

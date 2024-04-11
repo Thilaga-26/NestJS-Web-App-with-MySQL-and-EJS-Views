@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Teacher</title>
+</head>
+<body>
+  <h1 style="color:red">Edit Teacher</h1>
+  <form action="/teachers/<%= teacher.id %>" method="POST">
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" value="<%= teacher.name %>" required></td>
+      </tr>
+      <tr>
+        <td><label for="dept">Department:</label></td>
+        <td><input type="text" id="dept" name="dept" value="<%= teacher.dept %>" required></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td>
+          <select id="gender" name="gender" required>
+            <option value="Male" <%= teacher.gender === 'Male' ? 'selected' : '' %>>Male</option>
+            <option value="Female" <%= teacher.gender === 'Female' ? 'selected' : '' %>>Female</option>
+            <option value="Other" <%= teacher.gender === 'Other' ? 'selected' : '' %>>Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><input type="text" id="address" name="address" value="<%= teacher.address %>" required></td>
+      </tr>
+      <tr>
+        <td><label for="contactNo">Contact Number:</label></td>
+        <td><input type="text" id="contactNo" name="contactNo" value="<%= teacher.contactNo %>" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" value="<%= teacher.email %>" required></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button style="background-color:peachpuff;" type="submit">Update Teacher</button></td>
+      </tr>
+    </table>
+  </form>
+  <h3><p><b><a style="color:green" href="/teachers">Back to teacher-homepage</a></b></p></h3>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Management System</title>
+</head>
+<body>
+  <h1 style="color:purple">Teacher Management System</h1>
+  <h2>All Teachers:</h2>
+  <table width="1050px" height="80">
+      <tr bgcolor="skyblue">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>Contact No</th>
+        <th>Email</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    <tbody>
+      <% teachers.forEach(teacher => { %>
+        <tr>
+          <td><%= teacher.id %></td>
+          <td><%= teacher.name %></td>
+          <td><%= teacher.dept %></td>
+          <td><%= teacher.gender %></td>
+          <td><%= teacher.address %></td>
+          <td><%= teacher.contactNo %></td>
+          <td><%= teacher.email %></td>
+          <td>
+            <!-- Edit button -->
+            <a  style="color:blue"  href="/teachers/edit/<%= teacher.id %>">Edit</a>
+          </td>
+          <td>
+            <!-- Delete button -->
+            <form method="POST" action="/teachers/delete/<%= teacher.id %>" onsubmit="return confirm('Are you sure you want to delete this teacher?');">
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  <h3><p><b><a style="color:green"  href="/teachers/add">Add Teacher</a></b></p></h3>
+</body>
+</html>
