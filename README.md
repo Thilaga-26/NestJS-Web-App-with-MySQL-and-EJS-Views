@@ -56,7 +56,7 @@ MySQL client to interact with the database (e.g., MySQL Workbench, phpMyAdmin, o
 
 Here's a link to the MySQL download page where you can find the appropriate installer for your operating system:
 
-https://dev.mysql.com/downloads/
+MySQL Downloads
 
 We utilize the `@nestjs/config` module to manage environment variables. These variables are stored in a `.env` file located in the root directory of the project. 
 
