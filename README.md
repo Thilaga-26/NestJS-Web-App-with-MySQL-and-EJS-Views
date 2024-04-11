@@ -71,14 +71,16 @@ NestJS follows a modular architecture, allowing developers to organize their cod
 
 Follow these steps to create a new module in your NestJS application:
 
-# Step 1: Generate Module
+## Generate Module
 
 Use the Nest CLI to generate a new module. Replace `module-name` with the name of your module:
+
+Step 1: Generate Module
 
 ```bash
 nest generate module module-name
 
-# Step 2: Generate Controller
+Step 2: Generate Controller
 
 ```bash
 nest generate controller module-name
@@ -105,7 +107,9 @@ For example : ( Directory : (src/entities/student.entity.ts) )
 Create a directory to store your views. For example, views within the module directory.
 For example : ( Directory : (src/students/views/homepage.ejs) ) 
 
-## Accessing Your NestJS Application Locally (For Running the app)
+## For Running the Application
+
+# Accessing Your NestJS Application Locally
 
 To access your NestJS application running locally on your machine, follow these steps:
 
