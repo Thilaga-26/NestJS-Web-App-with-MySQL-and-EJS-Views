@@ -67,16 +67,32 @@ TypeORM is configured to connect to a MySQL database. The configuration is speci
 
 ## Creating a New Module in NestJS
 
+<<<<<<< HEAD
 NestJS follows a modular architecture, allowing developers to organize their code into cohesive modules. Follow these steps to create a new module in your NestJS application:
 
 # Step 1: Generate Module
 
 Use the Nest CLI to generate a new module. Replace `module-name` with the name of your module:
+=======
+NestJS follows a modular architecture, allowing developers to organize their code into cohesive modules. 
+
+Follow these steps to create a new module in your NestJS application:
+
+## Generate Module
+
+Use the Nest CLI to generate a new module. Replace `module-name` with the name of your module:
+
+Step 1: Generate Module
+>>>>>>> 5f7ba488d98faf28dea3950e965bec6af2f2b8c9
 
 ```bash
 nest generate module module-name
 
+<<<<<<< HEAD
 # Step 2: Generate Controller
+=======
+Step 2: Generate Controller
+>>>>>>> 5f7ba488d98faf28dea3950e965bec6af2f2b8c9
 
 ```bash
 nest generate controller module-name
@@ -103,7 +119,13 @@ For example : ( Directory : (src/entities/student.entity.ts) )
 Create a directory to store your views. For example, views within the module directory.
 For example : ( Directory : (src/students/views/homepage.ejs) ) 
 
+<<<<<<< HEAD
 ## Accessing Your NestJS Application Locally (For Running the app)
+=======
+## For Running the Application
+
+# Accessing Your NestJS Application Locally
+>>>>>>> 5f7ba488d98faf28dea3950e965bec6af2f2b8c9
 
 To access your NestJS application running locally on your machine, follow these steps:
 
