@@ -71,7 +71,6 @@ NestJS follows a modular architecture, allowing developers to organize their cod
 
 # Step 1: Generate Module
 
-Use the Nest CLI to generate a new module. Replace `module-name` with the name of your module:
 NestJS follows a modular architecture, allowing developers to organize their code into cohesive modules. 
 
 Follow these steps to create a new module in your NestJS application:
