@@ -31,18 +31,7 @@ A comprehensive NestJS application for managing student records, providing CRUD 
 # Installation
 
 ```bash
-For NestJS Installation and creating a new project in NestJS:
-$ npm i -g @nestjs/cli
-$ nest new project-name
-
-For Configuration:
-$ npm i --save @nestjs/config
-
-For Database TypeORM Installation:
-$ npm install --save @nestjs/typeorm typeorm mysql2
-
-For EJS Views Engine:
-$ npm install ejs @nestjs/platform-express
+npm install
 ```
 # Configuration and TypeORM Setup
 
@@ -50,95 +39,37 @@ In this NestJS application, we use environment variables for configuration and T
 
 ## Configuration
 
+For Accessing the Database
+
+Prerequisites
+MySQL Server installed on your system.
+MySQL client to interact with the database (e.g., MySQL Workbench, phpMyAdmin, or MySQL command-line client).
+
+Here's a link to the MySQL download page where you can find the appropriate installer for your operating system:
+
+https://dev.mysql.com/downloads/
+
 We utilize the `@nestjs/config` module to manage environment variables. These variables are stored in a `.env` file located in the root directory of the project. 
-You need to define the following variables:
 
-- `DB_HOST`: Hostname of the MySQL database.
-- `DB_PORT`: Port number of the MySQL database.
-- `DB_USERNAME`: Username for connecting to the MySQL database.
-- `DB_PASSWORD`: Password for connecting to the MySQL database.
-- `DB_DATABASE`: Name of the MySQL database.
-
-Ensure you set up these variables appropriately before running the application.
+Please fill the following fields in your .env file: DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, and DB_DATABASE.
 
 ## TypeORM Setup
 
 TypeORM is configured to connect to a MySQL database. The configuration is specified in the `src/app.module.ts` file.
 
-# Creating a New Module in NestJS
-
-NestJS follows a modular architecture, allowing developers to organize their code into cohesive modules. 
-Follow these steps to create a new module in your NestJS application:
-
-## Generate Module
-
-Use the Nest CLI to generate a new module. Replace `module-name` with the name of your module: 
-
-## Step 1: Generate Module
-
-```bash
-nest generate module module-name
-```
-
-## Step 2: Generate Controller
-
-```bash
-nest generate controller module-name
-```
-
-## Step 3: Generate Service
-
-```bash
-nest generate service module-name
-```
-
-# Creating Entity Files and Views in NestJS
-
-In a NestJS application, entity files represent the data model used to interact with the database.
-Views, on the other hand, represent the UI templates rendered by the application.
-
-Follow these steps to create entity files and views:
-
-## Step 1: Create Entity File
-
-Create a new TypeScript file for your entity. For example, `student.entity.ts` within the `entities` directory.
-For example : ( Directory : (src/entities/student.entity.ts) )
-
-## Step 2: Create View Files
-
-Create a directory to store your views. For example, views within the module directory.
-For example : ( Directory : (src/students/views/homepage.ejs) ) 
-
 # For Running the Application
 
-## Accessing Your NestJS Application
-
-To access your NestJS application running locally on your machine, follow these steps:
-
-1. Make sure your NestJS application is running. If not, start the application by running:
-
 ```bash
-# watch mode
-$ npm run start:dev
+$ npm run start
 ```
 
-2.Once the application is running, open your web browser.
+Once the application is running, open your web browser.
 
 Navigate to the following URL:
 
-http://localhost:3000/module-name
+http://localhost:3000/controller
 ( For Example : http://localhost:3000/students )
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
