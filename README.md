@@ -79,20 +79,23 @@ Follow these steps to create a new module in your NestJS application:
 
 Use the Nest CLI to generate a new module. Replace `module-name` with the name of your module:
 
-Step 1: Generate Module
+# Step 2: Generate Module
 
 ```bash
 nest generate module module-name
+```
 
 # Step 2: Generate Controller
 
 ```bash
 nest generate controller module-name
+```
 
 # Step 3: Generate Service
 
 ```bash
 nest generate service module-name
+```
 
 ## Creating Entity Files and Views in NestJS
 
@@ -122,6 +125,7 @@ To access your NestJS application running locally on your machine, follow these 
 ```bash
 # watch mode
 $ npm run start:dev
+```
 
 2.Once the application is running, open your web browser.
 
