@@ -28,6 +28,15 @@
 
 A comprehensive NestJS application for managing student records, providing CRUD operations for students, and rendering views using EJS templating engine.
 
+## Cloning the Repository
+
+You can clone this repository to your local machine using the following command:
+
+```bash
+git clone <repository_url>
+cd <repository_name>
+```
+
 # Installation
 
 ```bash
@@ -51,7 +60,7 @@ https://dev.mysql.com/downloads/
 
 We utilize the `@nestjs/config` module to manage environment variables. These variables are stored in a `.env` file located in the root directory of the project. 
 
-Please fill the following fields in your .env file: DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, and DB_DATABASE.
+Please fill in the following fields in your .env file with your MySQL database details: HOST, PORT, USERNAME, PASSWORD, and DATABASE NAME.
 
 ## TypeORM Setup
 
